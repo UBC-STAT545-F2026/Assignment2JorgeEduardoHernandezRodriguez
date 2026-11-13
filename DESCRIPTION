@@ -1,11 +1,17 @@
 Package: assignmentB2JorgeEduardoHernandezRodriguez
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Statistics and histogram distribution of a grouped numerical variable in a data set
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Jorge Eduardo", "Hernandez Rodriguez", , "jhernan1@student.ubc.ca", role = c("aut", "cre"))
+Description: This function makes a table with the main descriptive statistics of a numerical variable in a data set grouped by a categorical variable. The user must input the titles of the categorical and numerical variables contained in their data set for the function to work. Furthermore this function creates a histogram of the distribution of the numerical variable grouped.
+Imports: dplyr, 
+         ggplot2,
+         stats,
+         rlang,
+         testthat,
+         palmerpenguins
+License: MIT + file LICENSE  
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+Config/testthat/edition: 3

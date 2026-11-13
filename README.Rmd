@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+
+```
+
+# assignmentB2JorgeEduardoHernandezRodriguez Package
+
+The goal of assignmentB2JorgeEduardoHernandezRodriguez is to help people to make 
+a basic statistic summary and understand the distribution of the data of a numerical variable grouped by a categorical variable in a dataset.
+
+## Installation
+
+You can install the development version of assignmentB2JorgeEduardoHernandezRodriguez from [GitHub](https://github.com/) by calling:
+`devtools::install_github("UBC-STAT545-F2026/Assignment2JorgeEduardoHernandezRodriguez", ref = "0.1.0")`
+
+
+## Example
+
+This is a basic example of how to use the package using 2 different datasets:
+
+```{r example}
+library(assignmentB2JorgeEduardoHernandezRodriguez)
+# install.packages("palmerpenguins")
+library(palmerpenguins)
+# install.packages("gapminder")
+library(gapminder)
+
+# Make a statistics summary and histogram plot of the numerical variable  "bill_lenght_mm" grouped by the categorical variable "species"
+grouped_main_stats(palmerpenguins::penguins, species, bill_length_mm)
+
+# Make a statistics summary and histogram plot of the numerical variable  "lifeExp" grouped by the categorical variable "continent"
+grouped_main_stats(gapminder, continent, lifeExp)
+
+
+
+```
+
